@@ -103,7 +103,7 @@ with tab1:
             use_container_width=True
         )
 
-        if st.button("Extract Text from Image"):
+        if st.button("🔍 Extract Text from Image", type="primary"):
 
             with st.spinner("Running OCR..."):
 
@@ -151,7 +151,11 @@ with tab2:
 # REVIEW / EDIT EXTRACTED TEXT
 # ---------------------------------------------------------------
 
-st.header("2. Review / Edit Extracted Text")
+st.markdown("---")
+st.subheader("✏️ Step 2 — Review & Edit Extracted Text")
+st.caption(
+    "Check the OCR output carefully and correct any mistakes before analysis."
+)
 
 edited_text = st.text_area(
     "Extracted / Editable Report Text",
