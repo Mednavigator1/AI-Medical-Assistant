@@ -3,8 +3,11 @@ app.py
 ------
 The Streamlit frontend. This ties together:
 
-  IMAGE PATH:  Image -> OCR (ocr.py) -> Extracted Text -> RAG (rag.py) -> Explanation
-  TEXT PATH:   Typed Text ------------------------------> RAG (rag.py) -> Explanation
+IMAGE PATH:
+Image -> OCR (ocr.py) -> Extracted Text -> RAG (rag.py) -> Explanation
+
+TEXT PATH:
+Typed Text -> RAG (rag.py) -> Explanation
 
 Run with:
     streamlit run app.py
@@ -14,10 +17,22 @@ import streamlit as st
 from ocr import extract_text_from_image
 from rag import run_rag_pipeline
 
-st.set_page_config(page_title="Medical Report RAG Assistant", page_icon="🩺")
+
+# ---------------------------------------------------------------
+# PAGE CONFIGURATION
+# ---------------------------------------------------------------
+
+st.set_page_config(
+    page_title="Medical Report RAG Assistant",
+    page_icon="🩺"
+)
 
 st.title("🩺 Medical Report RAG Assistant")
-st.caption("Educational AI assistant for understanding medical reports using Retrieval-Augmented Generation.")
+
+st.caption(
+    "Educational AI assistant for understanding medical reports "
+    "using Retrieval-Augmented Generation."
+)
 
 st.warning(
     "⚠️ This application is for **educational purposes only** and does not provide "
@@ -25,91 +40,227 @@ st.warning(
     "qualified healthcare professional."
 )
 
+
+# ---------------------------------------------------------------
+# SESSION STATE
+# ---------------------------------------------------------------
+
 if "report_text" not in st.session_state:
     st.session_state.report_text = ""
+
+if "editable_report" not in st.session_state:
+    st.session_state.editable_report = ""
+
 
 # ---------------------------------------------------------------
 # INPUT SECTION
 # ---------------------------------------------------------------
+
 st.header("1. Provide Your Medical Report")
 
-tab1, tab2 = st.tabs(["📷 Upload Image", "⌨️ Type / Paste Text"])
+tab1, tab2 = st.tabs(
+    ["📷 Upload Image", "⌨️ Type / Paste Text"]
+)
+
+
+# ---------------------------------------------------------------
+# TAB 1: IMAGE UPLOAD
+# ---------------------------------------------------------------
 
 with tab1:
+
     uploaded_file = st.file_uploader(
         "Upload a JPG/JPEG/PNG image of a medical report",
         type=["jpg", "jpeg", "png"]
     )
+
     if uploaded_file is not None:
-        st.image(uploaded_file, caption="Uploaded Report", use_container_width=True)
+
+        st.image(
+            uploaded_file,
+            caption="Uploaded Report",
+            use_container_width=True
+        )
+
         if st.button("Extract Text from Image"):
+
             with st.spinner("Running OCR..."):
+
                 extracted = extract_text_from_image(uploaded_file)
+
+            # Store OCR result in BOTH session-state variables.
             st.session_state.report_text = extracted
-            st.success("Text extracted below. You can edit it before analyzing.")
+            st.session_state.editable_report = extracted
+
+            st.success(
+                "Text extracted below. You can edit it before analyzing."
+            )
+
+            # Rerun so that the text area immediately displays
+            # the newly extracted OCR text.
+            st.rerun()
+
+
+# ---------------------------------------------------------------
+# TAB 2: TYPE / PASTE TEXT
+# ---------------------------------------------------------------
 
 with tab2:
+
     manual_text = st.text_area(
         "Paste or type your medical report here",
-        placeholder="Hemoglobin: 10.2 g/dL\nWBC: 8,000 /µL\nPlatelets: 250,000 /µL\nGlucose: 110 mg/dL",
+
+        placeholder=(
+            "Hemoglobin: 10.2 g/dL\n"
+            "WBC: 8,000 /µL\n"
+            "Platelets: 250,000 /µL\n"
+            "Glucose: 110 mg/dL"
+        ),
+
         height=150
     )
+
     if manual_text.strip():
+
         st.session_state.report_text = manual_text
+        st.session_state.editable_report = manual_text
+
+
+# ---------------------------------------------------------------
+# REVIEW / EDIT EXTRACTED TEXT
+# ---------------------------------------------------------------
 
 st.header("2. Review / Edit Extracted Text")
+
 edited_text = st.text_area(
     "Extracted / Editable Report Text",
-    value=st.session_state.report_text,
+
     height=180,
+
     key="editable_report"
 )
 
-show_demo = st.checkbox("Show RAG process details (for demonstration)", value=True)
 
-analyze_clicked = st.button("🔍 Analyze Report", type="primary")
+# Keep the edited version available for analysis.
+st.session_state.report_text = edited_text
+
+
+# ---------------------------------------------------------------
+# RAG DEMONSTRATION OPTION
+# ---------------------------------------------------------------
+
+show_demo = st.checkbox(
+    "Show RAG process details (for demonstration)",
+    value=True
+)
+
+
+# ---------------------------------------------------------------
+# ANALYZE BUTTON
+# ---------------------------------------------------------------
+
+analyze_clicked = st.button(
+    "🔍 Analyze Report",
+    type="primary"
+)
+
 
 # ---------------------------------------------------------------
 # ANALYSIS / RAG PIPELINE
 # ---------------------------------------------------------------
+
 if analyze_clicked:
+
     if not edited_text.strip():
-        st.error("Please provide a report via image upload or manual text input first.")
+
+        st.error(
+            "Please provide a report via image upload or manual text input first."
+        )
+
     else:
-        with st.spinner("Retrieving relevant medical information and generating explanation..."):
+
+        with st.spinner(
+            "Retrieving relevant medical information and generating explanation..."
+        ):
+
             result = run_rag_pipeline(edited_text)
+
+
+        # -------------------------------------------------------
+        # RESULTS
+        # -------------------------------------------------------
 
         st.header("3. Results")
 
         st.subheader("🧾 AI Explanation")
+
         st.markdown(result["answer"])
 
+
+        # -------------------------------------------------------
+        # RAG DEMONSTRATION
+        # -------------------------------------------------------
+
         if show_demo:
+
             st.divider()
-            st.subheader("🔬 RAG Process (Demonstration View)")
+
+            st.subheader(
+                "🔬 RAG Process (Demonstration View)"
+            )
+
 
             with st.expander("1. User Input (Query)"):
+
                 st.code(result["query"])
 
-            with st.expander("2. Documents Retrieved from Vector Database"):
+
+            with st.expander(
+                "2. Documents Retrieved from Vector Database"
+            ):
+
                 for chunk in result["retrieved_chunks"]:
-                    st.markdown(f"**Source: `{chunk['source']}`** (similarity score: {chunk['score']:.3f})")
+
+                    st.markdown(
+                        f"**Source: `{chunk['source']}`** "
+                        f"(similarity score: {chunk['score']:.3f})"
+                    )
+
                     st.text(chunk["text"])
+
                     st.markdown("---")
 
-            with st.expander("3. Retrieved Context (inserted into the prompt)"):
+
+            with st.expander(
+                "3. Retrieved Context (inserted into the prompt)"
+            ):
+
                 st.text(result["context"])
 
-            with st.expander("4. Full Prompt Sent to the LLM"):
+
+            with st.expander(
+                "4. Full Prompt Sent to the LLM"
+            ):
+
                 st.text(result["prompt"])
 
-            with st.expander("5. Final LLM Answer (raw)"):
+
+            with st.expander(
+                "5. Final LLM Answer (raw)"
+            ):
+
                 st.text(result["answer"])
 
+
+        # -------------------------------------------------------
+        # MEDICAL DISCLAIMER
+        # -------------------------------------------------------
+
         st.divider()
+
         st.info(
-            "**Medical Disclaimer:** This explanation was generated by an AI system for "
-            "educational purposes only. It is not a medical diagnosis. Reference ranges "
-            "vary between laboratories and individuals. Always consult a qualified "
-            "healthcare professional about your actual health and test results."
+            "**Medical Disclaimer:** This explanation was generated by an AI system "
+            "for educational purposes only. It is not a medical diagnosis. Reference "
+            "ranges vary between laboratories and individuals. Always consult a "
+            "qualified healthcare professional about your actual health and test results."
         )
