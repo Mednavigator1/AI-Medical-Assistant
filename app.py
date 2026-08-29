@@ -29,7 +29,24 @@ if not os.path.exists(INDEX_PATH) or not os.path.exists(META_PATH):
     with st.spinner("Preparing medical knowledge database..."):
         build_index()
 
-st.title("🩺 Medical Report RAG Assistant")
+st.markdown(
+    """
+    <div style="text-align:center; padding: 10px 0 20px 0;">
+        <h1 style="font-size:42px; margin-bottom:5px;">
+            🩺 AI Medical Assistant
+        </h1>
+        <p style="font-size:18px; color:#666;">
+            Understand your medical reports with OCR, RAG and AI
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.info(
+    "ℹ️ Upload a medical report, review the extracted text, "
+    "and let the AI explain the information in simple language."
+)
 
 st.caption(
     "Educational AI assistant for understanding medical reports "
