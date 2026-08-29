@@ -13,19 +13,21 @@ Run with:
     streamlit run app.py
 """
 
+import os
 import streamlit as st
 from ocr import extract_text_from_image
 from rag import run_rag_pipeline
-
+from vector_store import build_index, INDEX_PATH, META_PATH
 
 # ---------------------------------------------------------------
 # PAGE CONFIGURATION
 # ---------------------------------------------------------------
+st.set_page_config(page_title="Medical Report RAG Assistant", page_icon="🩺")
 
-st.set_page_config(
-    page_title="Medical Report RAG Assistant",
-    page_icon="🩺"
-)
+# Build the FAISS vector database automatically if it does not exist
+if not os.path.exists(INDEX_PATH) or not os.path.exists(META_PATH):
+    with st.spinner("Preparing medical knowledge database..."):
+        build_index()
 
 st.title("🩺 Medical Report RAG Assistant")
 
