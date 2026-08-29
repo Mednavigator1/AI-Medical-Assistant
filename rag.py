@@ -15,13 +15,15 @@ HALLUCINATING (making up plausible-sounding but unverified information).
 """
 
 import os
+import streamlit as st
 from dotenv import load_dotenv
 from anthropic import Anthropic
 from vector_store import Retriever
 
 load_dotenv()
 
-client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+api_key = st.secrets["ANTHROPIC_API_KEY"]
+client = Anthropic(api_key=api_key)
 
 SYSTEM_PROMPT = """You are an educational medical report assistant.
 
