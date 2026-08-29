@@ -75,7 +75,9 @@ if "editable_report" not in st.session_state:
 # INPUT SECTION
 # ---------------------------------------------------------------
 
-st.header("1. Provide Your Medical Report")
+st.markdown("---")
+st.subheader("📄 Step 1 — Provide Your Medical Report")
+st.caption("Upload a report image or paste the report text manually.")
 
 tab1, tab2 = st.tabs(
     ["📷 Upload Image", "⌨️ Type / Paste Text"]
