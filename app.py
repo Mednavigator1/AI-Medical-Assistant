@@ -231,8 +231,9 @@ if analyze_clicked:
             st.divider()
 
             st.subheader(
-                "🔬 RAG Process (Demonstration View)"
+                "🔬  How the AI Reached This Result")
             )
+            st.caption("This section shows the Retrieval-Augmented Generation process used by the application.")
 
 
             with st.expander("1. User Input (Query)"):
@@ -240,9 +241,7 @@ if analyze_clicked:
                 st.code(result["query"])
 
 
-            with st.expander(
-                "2. Documents Retrieved from Vector Database"
-            ):
+            with st.expander( "📚 Retrieved Knowledge"):
 
                 for chunk in result["retrieved_chunks"]:
 
