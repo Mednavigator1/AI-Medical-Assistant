@@ -1,0 +1,19 @@
+PARAMETER: Triglycerides
+
+WHAT IT IS:
+Triglycerides are a type of fat (lipid) found in blood, used for energy storage.
+
+PURPOSE OF THE TEST:
+Measured as part of a lipid panel to assess cardiovascular and metabolic health.
+
+GENERAL REFERENCE RANGE (fasting, adults, approximate):
+Below 150 mg/dL is generally considered normal.
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low triglycerides are uncommon and can sometimes be associated with malnutrition or certain thyroid conditions.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High triglycerides can sometimes be associated with diet high in sugar/fat, obesity, alcohol use, diabetes, or certain medications.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. Triglyceride levels can be affected by recent food intake, so fasting is often required before testing.

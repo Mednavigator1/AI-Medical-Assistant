@@ -1,0 +1,19 @@
+PARAMETER: Glucose (Blood Sugar)
+
+WHAT IT IS:
+Glucose is the main sugar found in blood and is the body's primary energy source.
+
+PURPOSE OF THE TEST:
+Measured to screen for and monitor diabetes, prediabetes, or blood sugar regulation problems.
+
+GENERAL REFERENCE RANGE (fasting, adults, approximate):
+70 to 99 mg/dL (fasting); values differ for random or post-meal tests.
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low glucose (hypoglycemia) can sometimes be associated with excess insulin, skipped meals, certain medications, or hormonal issues.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High glucose (hyperglycemia) can sometimes be associated with diabetes, prediabetes, stress, or certain medications.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories, testing method (fasting vs random), and individuals. A single reading is not enough to diagnose diabetes.

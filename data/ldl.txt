@@ -1,0 +1,19 @@
+PARAMETER: LDL Cholesterol ("Bad" Cholesterol)
+
+WHAT IT IS:
+LDL (Low-Density Lipoprotein) carries cholesterol to cells but can build up in artery walls when in excess.
+
+PURPOSE OF THE TEST:
+Measured as part of a lipid panel to assess cardiovascular risk.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+Below 100 mg/dL is generally considered optimal; ranges vary by individual risk factors.
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Very low LDL is generally not concerning and can sometimes reflect diet, medication, or genetics.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High LDL can sometimes be associated with diet, genetics, sedentary lifestyle, or other conditions, and may relate to increased risk of artery plaque buildup.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories, individual risk factors, and guidelines. LDL targets often depend on a person's overall cardiovascular risk profile.

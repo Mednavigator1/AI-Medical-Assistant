@@ -1,0 +1,21 @@
+PARAMETER: Hemoglobin (Hb)
+
+WHAT IT IS:
+Hemoglobin is a protein inside red blood cells that carries oxygen from the lungs to the rest of the body and carries carbon dioxide back to the lungs.
+
+PURPOSE OF THE TEST:
+It is measured as part of a Complete Blood Count (CBC) to check for anemia, blood disorders, or general oxygen-carrying capacity of the blood.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+- Men: 13.5 to 17.5 g/dL
+- Women: 12.0 to 15.5 g/dL
+Ranges vary by lab, age, sex, and altitude.
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low hemoglobin (anemia) can sometimes be associated with iron deficiency, vitamin B12 or folate deficiency, chronic disease, blood loss, or bone marrow problems.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High hemoglobin can sometimes be associated with dehydration, living at high altitude, smoking, lung disease, or certain bone marrow conditions.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. A single number cannot diagnose a condition. Always interpret alongside other test results and a doctor's evaluation.

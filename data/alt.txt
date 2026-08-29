@@ -1,0 +1,19 @@
+PARAMETER: ALT (Alanine Aminotransferase)
+
+WHAT IT IS:
+ALT is an enzyme found mainly in liver cells that helps with protein metabolism.
+
+PURPOSE OF THE TEST:
+Measured to assess liver health and detect liver cell damage.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+7 to 56 U/L
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low ALT is generally not a concern and is usually considered normal.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High ALT can sometimes be associated with liver inflammation, fatty liver, viral hepatitis, certain medications, or alcohol use.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. ALT is often interpreted together with AST and other liver markers.

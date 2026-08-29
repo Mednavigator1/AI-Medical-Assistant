@@ -1,0 +1,20 @@
+PARAMETER: Red Blood Cells (RBC)
+
+WHAT IT IS:
+Red blood cells (erythrocytes) carry oxygen throughout the body using hemoglobin.
+
+PURPOSE OF THE TEST:
+Measured as part of a CBC to evaluate oxygen-carrying capacity and detect anemia or other blood disorders.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+- Men: 4.7 to 6.1 million cells/µL
+- Women: 4.2 to 5.4 million cells/µL
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low RBC count can sometimes be associated with anemia, blood loss, nutritional deficiencies, or bone marrow disorders.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High RBC count can sometimes be associated with dehydration, lung disease, high altitude, or certain bone marrow conditions.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. RBC count is usually interpreted together with hemoglobin and hematocrit.

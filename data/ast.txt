@@ -1,0 +1,19 @@
+PARAMETER: AST (Aspartate Aminotransferase)
+
+WHAT IT IS:
+AST is an enzyme found in the liver, heart, and muscles, released into the blood when these tissues are damaged.
+
+PURPOSE OF THE TEST:
+Measured to assess liver health, and sometimes muscle or heart conditions.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+10 to 40 U/L
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low AST is generally not a concern and is usually considered normal.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High AST can sometimes be associated with liver damage, muscle injury, heart conditions, or alcohol use.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. AST is less specific to the liver than ALT, so both are usually interpreted together.

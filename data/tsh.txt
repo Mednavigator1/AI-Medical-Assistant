@@ -1,0 +1,19 @@
+PARAMETER: TSH (Thyroid-Stimulating Hormone)
+
+WHAT IT IS:
+TSH is a hormone from the pituitary gland that signals the thyroid gland to produce thyroid hormones, which regulate metabolism.
+
+PURPOSE OF THE TEST:
+Measured to screen for and monitor thyroid function (hypothyroidism or hyperthyroidism).
+
+GENERAL REFERENCE RANGE (adults, approximate):
+0.4 to 4.0 mIU/L
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low TSH can sometimes be associated with an overactive thyroid (hyperthyroidism) or excess thyroid medication.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High TSH can sometimes be associated with an underactive thyroid (hypothyroidism).
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. TSH is often interpreted along with free T3/T4 levels for a fuller picture.

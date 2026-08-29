@@ -1,0 +1,19 @@
+PARAMETER: HDL Cholesterol ("Good" Cholesterol)
+
+WHAT IT IS:
+HDL (High-Density Lipoprotein) helps remove excess cholesterol from the bloodstream and transport it to the liver.
+
+PURPOSE OF THE TEST:
+Measured as part of a lipid panel to assess cardiovascular risk.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+Above 40 mg/dL (men) or above 50 mg/dL (women) is generally considered favorable; higher is generally better.
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low HDL can sometimes be associated with sedentary lifestyle, smoking, obesity, or certain genetic factors, and may relate to increased cardiovascular risk.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High HDL is generally considered protective for heart health, though extremely high values are being studied further.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. HDL should be interpreted alongside LDL, triglycerides, and total cholesterol.

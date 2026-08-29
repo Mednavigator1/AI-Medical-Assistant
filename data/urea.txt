@@ -1,0 +1,19 @@
+PARAMETER: Urea (Blood Urea Nitrogen / BUN)
+
+WHAT IT IS:
+Urea is a waste product formed when the body breaks down protein, filtered out by the kidneys.
+
+PURPOSE OF THE TEST:
+Measured to assess kidney function and hydration status.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+7 to 20 mg/dL
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low urea can sometimes be associated with a low-protein diet, liver disease, or overhydration.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High urea can sometimes be associated with reduced kidney function, dehydration, high-protein diet, or gastrointestinal bleeding.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. Urea is often interpreted together with creatinine for kidney function assessment.

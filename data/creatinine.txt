@@ -1,0 +1,20 @@
+PARAMETER: Creatinine
+
+WHAT IT IS:
+Creatinine is a waste product from normal muscle breakdown, filtered out of the blood by the kidneys.
+
+PURPOSE OF THE TEST:
+Measured to assess kidney function.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+- Men: 0.7 to 1.3 mg/dL
+- Women: 0.6 to 1.1 mg/dL
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low creatinine is generally not concerning and can sometimes be associated with lower muscle mass.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High creatinine can sometimes be associated with reduced kidney function, dehydration, or high muscle breakdown.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories, muscle mass, age, and sex. Creatinine is often used with eGFR to assess kidney function more accurately.

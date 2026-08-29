@@ -1,0 +1,19 @@
+PARAMETER: Vitamin D (25-hydroxyvitamin D)
+
+WHAT IT IS:
+Vitamin D is a fat-soluble vitamin important for calcium absorption, bone health, and immune function.
+
+PURPOSE OF THE TEST:
+Measured to assess vitamin D sufficiency, especially in people with bone issues, limited sun exposure, or certain risk factors.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+20 to 50 ng/mL is generally considered sufficient; below 20 ng/mL is often considered deficient.
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low vitamin D can sometimes be associated with limited sun exposure, dietary insufficiency, malabsorption, or certain medical conditions.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High vitamin D is uncommon and can sometimes be associated with excessive supplementation.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals, and recommendations differ by region and population.

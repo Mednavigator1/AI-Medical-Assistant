@@ -1,0 +1,19 @@
+PARAMETER: Total Cholesterol
+
+WHAT IT IS:
+Cholesterol is a fat-like substance used to build cells and hormones; it travels in the blood combined with proteins.
+
+PURPOSE OF THE TEST:
+Measured to assess cardiovascular (heart and blood vessel) risk as part of a lipid panel.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+Below 200 mg/dL is generally considered desirable.
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Very low cholesterol is uncommon but can sometimes be associated with malnutrition, liver disease, or certain genetic conditions.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High total cholesterol can sometimes be associated with diet, genetics, sedentary lifestyle, or other metabolic conditions, and may relate to increased cardiovascular risk.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. Total cholesterol is usually interpreted together with HDL, LDL, and triglycerides, not alone.

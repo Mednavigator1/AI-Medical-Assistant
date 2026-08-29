@@ -1,0 +1,19 @@
+PARAMETER: Platelets (Thrombocytes)
+
+WHAT IT IS:
+Platelets are small cell fragments in the blood that help it clot and stop bleeding.
+
+PURPOSE OF THE TEST:
+Measured as part of a CBC to assess clotting ability and detect bleeding or clotting disorders.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+150,000 to 450,000 /µL
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low platelet count (thrombocytopenia) can sometimes be associated with viral infections, autoimmune conditions, certain medications, or bone marrow problems.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High platelet count (thrombocytosis) can sometimes be associated with inflammation, infection, iron deficiency, or bone marrow disorders.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. Extreme values (very high or very low) generally warrant prompt medical attention.

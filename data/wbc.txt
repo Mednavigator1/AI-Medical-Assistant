@@ -1,0 +1,19 @@
+PARAMETER: White Blood Cells (WBC)
+
+WHAT IT IS:
+White blood cells (leukocytes) are part of the immune system and help the body fight infections and diseases.
+
+PURPOSE OF THE TEST:
+Measured as part of a CBC to check for infection, inflammation, allergic reactions, or blood/bone marrow disorders.
+
+GENERAL REFERENCE RANGE (adults, approximate):
+4,000 to 11,000 cells/µL
+
+WHAT LOW VALUES CAN SOMETIMES INDICATE:
+Low WBC count can sometimes be associated with viral infections, bone marrow problems, autoimmune conditions, or certain medications.
+
+WHAT HIGH VALUES CAN SOMETIMES INDICATE:
+High WBC count can sometimes be associated with bacterial infection, inflammation, stress response, smoking, or certain blood disorders.
+
+IMPORTANT CAVEATS:
+Reference ranges vary between laboratories and individuals. WBC count alone does not identify the cause; a "differential" breakdown and clinical context are needed.
