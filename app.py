@@ -232,7 +232,7 @@ if analyze_clicked:
 
             st.subheader(
                 "🔬  How the AI Reached This Result")
-            )
+            
             st.caption("This section shows the Retrieval-Augmented Generation process used by the application.")
 
 
